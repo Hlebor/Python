@@ -190,3 +190,113 @@ else:
     b += 1000
     print(a, b)
 #_______________7
+#7.1
+s = input("Введите строку:")
+if s[-1] == "я" or s[-1] == "ю" or s[-1] == "е" or s[-1] == "и":
+    print(True)
+else:
+    print(False)
+#7.2
+a = int(input("Введите 1 целое число:"))
+b = int(input("Введите 2 целое число:"))
+c = int(input("Введите 3 целое число:"))
+if a <= 0 or b <= 0 or c <= 0 or a + b <= c or a + c <= b or c + b <= a:
+    print(False)
+else:
+    print(True)
+#7.3
+s = float(input("Введите число:"))
+j = s%10
+if j == 0:
+    s **= 10
+    print(s)
+elif j == 1:
+    s /= 3
+    print(s)
+elif j == 2:
+    s /= 2
+    print(s)
+else:
+    s **= 2
+    print(s)
+#_______________8
+#8.1
+passo = input("Введите пароль:")
+if len(passo) < 8 or passo == "qwerty123":
+    print(False)
+else:
+    print(True)
+#8.2
+pc_number = 777
+a = int(input("Введите 1 число:"))
+b = int(input("Введите 2 число:"))
+if a < pc_number < b or b < pc_number < a:
+    print(True)
+else:
+    print(False)
+#8.3
+lamp_1 = 0
+lamp_2 = 0
+answer = int(input("Какую лампочку зажечь?"))
+if answer == 1:
+    lamp_1 = 1
+    print("Лампочка 1 зажжена:", lamp_1)
+elif answer == 2:
+    lamp_2 = 1
+    print("Лампочка 2 зажжена:", lamp_2)
+else:
+    print("Обе лампочки не горят", lamp_1, lamp_2)
+#_______________9
+#9.1
+switch_1 = False
+switch_2 = False
+print(switch_1, switch_2)
+print("Включить?")
+s = input()
+if s == "да" or s == "Да":
+    switch_1 = True
+    switch_2 = True
+print(switch_1, switch_2)
+#9.2
+a = int(input("Введите число:"))
+if a >= 0 and a%2 == 0:
+    print(True, "even")
+elif a >= 0 and a%2 != 0:
+    print(True, "odd")
+else:
+    print(False)
+#9.3
+stro = input("Введите строку:")
+if stro[0] == "/":
+    print("command")
+else:
+    print("It's string")
+#_______________10
+#10.1
+a = input("Введите строку:")
+if len(a) == 0:
+    print(None)
+elif len(a) <= 5:
+    print("short")
+elif len(a) >= 6 and len(a) <= 10:
+    print("normal")
+else:
+    print("long")
+#10.2
+num = int(input("Введите число:"))
+if num < 0:
+    num = 1000000
+    print(num)
+elif num == 0:
+    num = 2
+    print(num**2)
+else:
+    print(num**3)
+#10.3
+number_1 = 10
+number_2 = 100
+b = int(input("Введите число:"))
+if number_1 < b and b < number_2:
+    print(True)
+else:
+    print(False)
