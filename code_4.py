@@ -300,3 +300,64 @@ if number_1 < b and b < number_2:
     print(True)
 else:
     print(False)
+
+#_______________11
+#11.1
+prog_num = 0
+num1 = int(input("Введите первое число:"))
+num2 = int(input("Введите второе число:"))
+
+if num1 < 0 and num2 < 0:
+    prog_num = num1 + num2
+    print(prog_num)
+elif num1 > 0 and num2 > 0:
+    prog_num = num1 - num2
+    print(prog_num)
+else:
+    print(False)
+
+#11.2
+num = int(input("Введите число:"))
+if num % 2 != 0:
+    print(num + 1)
+else:
+    print(True)
+
+#11.3
+text = input("Введите строку:")
+if len(text) > 10:
+    print(text[:5])
+else:
+    print(text)
+
+#_______________12
+#12.1
+ru = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+en = "abcdefghijklmnopqrstuvwxyz"
+
+letter = input("Введите букву:")
+
+if letter in ru:
+    print("rus")
+elif letter in en:
+    print("eng")
+else:
+    print(None)
+#12.2
+pc_num = 10
+user_num = int(input("Введите: "))
+if user_num == pc_num or user_num == pc_num - 1 or user_num == pc_num + 1:
+    print(True)
+else:
+    print(False)
+#12.3
+print("(221 - 13) * 2")
+correct1 = (221-13)*2
+
+user = int(input("Введите ответ:"))
+if user == correct1:
+    print(True)
+elif user > correct1:
+    print(">")
+else:
+    print("<")
